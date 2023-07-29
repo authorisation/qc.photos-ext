@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "qc.photos",
+  "version": "1.5",
+
+  "description": "Adds a qc.photos button to the CSSBuy item page. Not affiliated with qc.photos",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.cssbuy.com/item-*"],
+      "js": ["inject.js"]
+    }
+  ]
+}
